@@ -194,6 +194,7 @@ header .header-content {
 }
 
 header .header-content .header-content-inner h1 {
+    color: #aaaaaa;
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -218,7 +219,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 30%; /* used to be 50% */
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
