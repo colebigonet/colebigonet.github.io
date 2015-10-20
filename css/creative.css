@@ -52,7 +52,8 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    /*background-color: #f05f40;*/
+    background-color: #4E4D4A;
 }
 
 .bg-dark {
@@ -474,4 +475,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+    background-color: #F2F0DF;
+}
+
+.project-header {
+    background-image: none;
 }
