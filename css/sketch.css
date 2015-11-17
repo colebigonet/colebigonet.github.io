@@ -1,4 +1,11 @@
 .sketch-title {
 	color: #aaaaaa;
 	text-align: center;
+	margin-top: 100px;
 }
+
+canvas{
+	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+}  
