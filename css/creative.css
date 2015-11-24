@@ -481,3 +481,7 @@ body {
 .project-header {
     background-image: none;
 }
+
+.portfolio-box .portfolio-box-caption {
+    background-color: rgba(0, 0, 0, 0.498039);
+}    
