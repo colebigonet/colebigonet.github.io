@@ -485,3 +485,20 @@ body {
 .portfolio-box .portfolio-box-caption {
     background-color: rgba(0, 0, 0, 0.498039);
 }    
+#contact {
+    background-color: #4E4D4A;
+    color: #fff;
+}
+#contact p, #contact a, #contact hr {
+    font-size: 18px;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+@media (min-width: 768px){
+    .navbar-default .nav > li>a, .navbar-default .nav>li>a:focus {
+        color: rgba(0,0,0,.7);
+    }  
+    .navbar-default .nav > li>a, .navbar-default .nav>li>a:hover {
+    color: rgba(240,95,64,.7);
+}  
+}
