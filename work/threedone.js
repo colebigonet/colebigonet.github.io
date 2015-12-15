@@ -28,7 +28,7 @@ var render = function () {
 	cube.rotation.y += 0.01;
 	//cube.rotation.z += 0.1;
 
-	camera.position.z+=();
+	//camera.position.z+=();
 
 	renderer.render(scene, camera);
 };

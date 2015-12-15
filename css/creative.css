@@ -502,3 +502,8 @@ body {
     color: rgba(240,95,64,.7);
 }  
 }
+
+.navbar-brand {
+    color: #AAAAAA !important;
+    font-size: 24px;
+}
