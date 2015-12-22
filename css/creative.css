@@ -514,3 +514,14 @@ body {
 .non-top-vids {
     margin-top: 80px;
 }
+
+.bio {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 100;
+    text-align: justify;
+}
+#about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
