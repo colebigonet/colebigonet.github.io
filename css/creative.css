@@ -485,11 +485,8 @@ body {
 .portfolio-box .portfolio-box-caption {
     background-color: rgba(0, 0, 0, 0.498039);
 }   
-#videos {
+#music {
     background-color: #262525;
-} 
-#audio {
-    background-color: #525252;
 }
 #contact {
     background-color: #4E4D4A;
@@ -512,4 +509,8 @@ body {
 .navbar-brand {
     color: #AAAAAA !important;
     font-size: 24px;
+}
+
+.non-top-vids {
+    margin-top: 80px;
 }
