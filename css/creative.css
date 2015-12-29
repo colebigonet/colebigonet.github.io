@@ -525,3 +525,10 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+.navbar-brand {
+    background: url("../logo.png");
+    width: 75px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px !important;
+}
