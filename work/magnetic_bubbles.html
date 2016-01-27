@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cole Bigonet - Magnetic Bubbles</title>
+  <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+  <a-scene>
+      <a-entity geometry="primitive: box" material="color: #4CC3D9"
+                rotation="0 45 0">
+          <a-animation attribute="rotation" to="0 405 0" dur="10000" fill="forwards"   easing="linear" repeat="indefinite">          
+          </a-animation>
+       </a-entity>
+      <a-entity geometry="primitive: box" material="color: #4CC3D9" position="0 3 0" rotation="60 0 0">
+        <a-animation attribute="rotation" to="420 0 0" dur="10000" fill="forwards" easing="linear" repeat="indefinite">          
+          </a-animation>
+      </a-entity>
+    <!--<a-entity geometry="primitive: sphere; radius: 0.1" material="color: #aaa" position="0 0 0">
+        <a-animation attribute="position" to="0 3 0" dur="2000" fill="forwards" easing="linear" repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity geometry="primitive: sphere; radius: 0.1" material="color: #aaa" position="0.5 0 0">
+        <a-animation attribute="position" to="0.5 3 0" dur="2000"
+                 fill="forwards"
+                 easing="linear"
+                 repeat="indefinite">          
+          </a-animation>
+      </a-entity>-->
+   </a-scene>
+   <script>
+   		$(function() {
+		  var spheres;
+		  for(var x=-0.6; x<1; x+=0.4) {
+		    for(var z=-0.4; z<1; z+=0.3) {
+		      var dur = 2000+1000*Math.random();
+		spheres+='<a-entity geometry="primitive: sphere; radius: 0.10" material="color: #d9d" position="'+ x + '0 ' +z+'"><a-animation attribute="position" to="' + x + ' 2 ' +z+'" dur="'+dur+'" fill="forwards" easing="ease-out-bounce" repeat="indefinite"></a-animation></a-entity>';
+		  }  
+		  }
+		  $("a-scene").append(spheres);
+		});  
+   </script>
+</body>
+</html>
