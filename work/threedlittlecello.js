@@ -27,18 +27,18 @@ var hlight = new THREE.HemisphereLight( 0xf22fbb, 0x080820, 1 );
 
 var framecount = 1;
 
-var geometry1 = new THREE.CircleGeometry( 2, 64 );
-//geometry1.position.z = 0.1;
-var material1 = new THREE.MeshBasicMaterial( { color: 0x00ff00, side: THREE.DoubleSide } );
-var circle1 = new THREE.Mesh( geometry1, material1 );
-scene.add( circle1 ); 
+/*for(var c = 0; c<10; c++) {
+  //var geometry = new THREE.CircleGeometry( 2, 64 );
+  var geometry = new THREE.CircleGeometry( 1+c/10, 64 );
+  var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+  var material = new THREE.MeshBasicMaterial( { color: color, side: THREE.DoubleSide } );
+  var circle = new THREE.Mesh( geometry, material );
+  circle.position.z = c/10+0.1;
+  scene.add( circle ); 
+}*/
 
-//add another circle for testing purposes, later add for loop:
-var geometry2 = new THREE.CircleGeometry( 2, 64 );
-var material2 = new THREE.MeshBasicMaterial( { color: 0xffff00, side: THREE.DoubleSide } );
-var circle2 = new THREE.Mesh( geometry2, material2 );
-
-scene.add( circle2 ); 
+/*controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false; */
 
 var render = function () {
   requestAnimationFrame( render );
@@ -46,13 +46,23 @@ var render = function () {
   //cubesgrid[5][5].position.y = 1+Math.sin(framecount/100);
 
 
-  circle1.rotation.y += Math.PI/180;
-  circle2.rotation.y += Math.PI/180;
+  //circle1.rotation.y += Math.PI/180;
+  //circle2.rotation.y += Math.PI/180;
 
   //camera.position.y+=0.1;
   //camera.position.x+=0.1;
 
   //camera.lookAt(new THREE.Vector3( 0, 0, 0 ));
+
+  for(var c = 0; c<10; c++) {
+  //var geometry = new THREE.CircleGeometry( 2, 64 );
+  var geometry = new THREE.CircleGeometry( Math.random()*(1+c/10), 64 );
+  var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+  var material = new THREE.MeshBasicMaterial( { color: color, side: THREE.DoubleSide } );
+  var circle = new THREE.Mesh( geometry, material );
+  circle.position.z = c/10+0.1;
+  scene.add( circle ); 
+}
 
   renderer.render(scene, camera);
   framecount++;
