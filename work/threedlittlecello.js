@@ -13,6 +13,8 @@ camera.position.z = 6;
 camera.position.y = 3;
 camera.lookAt(new THREE.Vector3( 2, 0, 2 )); */
 
+//wkjhgfejkhf
+
 camera.position.z = 5;
 
 var light = new THREE.AmbientLight( 0x404040 ); // soft white light
