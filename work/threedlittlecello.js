@@ -13,9 +13,11 @@ camera.position.z = 6;
 camera.position.y = 3;
 camera.lookAt(new THREE.Vector3( 2, 0, 2 )); */
 
-camera.position.z = 5;
+//camera.position.z = 0;
 //camera.position.x = 5;
-camera.lookAt(new THREE.Vector3( 2, 0, 2 ));
+camera.position.y = 5;
+//camera.lookAt(new THREE.Vector3( 2, 0, 2 ));
+camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 var light = new THREE.AmbientLight( 0x404040 ); // soft white light
 //scene.add( light );
@@ -59,8 +61,8 @@ var render = function () {
   	circles[circle].scale.y=scale;
   }
 
-  camera.position.x+=Math.cos(framecount/180);
-  camera.position.z+=5*Math.sin(framecount/180);
+  camera.position.x=1.5*Math.cos(framecount/180);
+  camera.position.z=1.5*Math.sin(framecount/180);
   //camera.position.x+=0.1;
 
   //camera.lookAt(new THREE.Vector3( 0, 0, 0 ));
